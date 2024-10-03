@@ -1,4 +1,4 @@
-export type ChannelsResponse = [{
+export type Channel = {
   cid: number;
   name: string;
   lang: string;
@@ -18,7 +18,9 @@ export type ChannelsResponse = [{
     updated: string;
     url: string;
   }
-}]
+}
+
+export type ChannelsResponse = Channel[] | [];
 
 export type ErrorResponse = {
   error: boolean;
