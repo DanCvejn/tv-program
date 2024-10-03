@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "../styles/style.scss";
 
 export const metadata: Metadata = {
   title: "TV Program",
@@ -12,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="cs">
-      <body>
+      <body className="w-full h-full bg-slate-300">
         {children}
       </body>
     </html>

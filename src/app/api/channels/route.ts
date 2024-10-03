@@ -13,6 +13,7 @@ export async function GET (req: NextApiRequest, res: NextApiResponse) {
     return new Response(JSON.stringify(response));
   } else {
     res.statusCode = 200;
-    return new Response(JSON.stringify(response.data["tv-program-channels"]));
+    const dataResponse = response.data["tv-program-channels"];
+    return new Response(JSON.stringify(dataResponse));
   }
 }
